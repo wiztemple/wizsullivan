@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: #fff;
+}
+h1 {
+   font-family: 'Playfair Display SC', serif; 
+}
+/* scrollbar */
+/* To style the document scrollbar, remove `.custom-scrollbar` */
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 70px;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #00d1b2;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px #00d1b2;
+}
+.header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/port.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*navbar styles*/
+.wizsullivan--nav {
+    background-color: #5854E1;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10); */
+}
+.wizsullivan--brand > a{
+    font-family: 'Lobster Two', cursive;
+    color: #fff !important;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*media queries */
+@media (max-width: 767px){
+ .section {
+    padding: 40px 0;
+  } 
+  .header {
+     position: relative;
+    height: 40vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: top;
+  }
+  .wizsullivan--brand > a{
+    font-family: 'Lobster Two', cursive;
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+}
