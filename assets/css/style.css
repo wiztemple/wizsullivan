@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Karla');
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Karla', sans-serif;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 h1 {
    font-family: 'Playfair Display SC', serif; 
@@ -61,4 +63,64 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     font-weight: bold;
 }
+}
+.wizheader {
+    padding-top: 2rem;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.wizsubtitle {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.wizcard {
+    background: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    border-radius: 10px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.wizcard--image {
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 76% 98%, 36% 80%, 0% 80%, 0% 20%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 76% 98%, 36% 80%, 0% 80%, 0% 20%);
+    background-image: url('../images/heaven.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.wizcard--image:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 46% 80%, 23% 90%, 0% 80%, 0% 20%);
+clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 46% 80%, 23% 90%, 0% 80%, 0% 20%);
+transition: all 0.6s;
+}
+.wizcard--body {
+    padding: 10px;
+    font-size: 20px;
+}
+.appcard {
+    background: #fff;
+    font-family: 'Cinzel Decorative', cursive;
+    border-radius: 10px;
+box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+}
+.appcard--image {
+    height: 250px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 74% 78%, 48% 71%, 23% 78%, 0% 70%, 0% 35%, 0 0);
+clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 74% 78%, 48% 71%, 23% 78%, 0% 70%, 0% 35%, 0 0);
+    background-image: url('../images/heaven.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.appcard--image:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 68% 81%, 48% 71%, 26% 83%, 0% 70%, 0% 35%, 0 0);
+clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 68% 81%, 48% 71%, 26% 83%, 0% 70%, 0% 35%, 0 0);
+transition: all 0.8s;
+}
+.appcard--body {
+    padding: 10px;
+    font-size: 20px;
 }
