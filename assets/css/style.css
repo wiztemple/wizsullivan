@@ -44,7 +44,33 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
     font-weight: bold;
 }
-
+.wizsullivan--desc {
+    margin-top: 3rem;
+}
+.wizsullivan--desc > h1 {
+    color: #fff;
+    padding-top: 7rem;
+}
+.wizsullivan--desc > p {
+    font-size: 22px;
+    color: #fff;
+    line-height: 200%;
+}
+.wizbtn {
+    padding: 15px 50px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.wizsullivan--image {
+    margin-top: 10.9rem;
+    height: 500px;
+    width: 100%;
+    background-image: url('../images/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(46% 0, 100% 25%, 100% 75%, 56% 99%, 6% 73%, 0 25%);
+clip-path: polygon(46% 0, 100% 25%, 100% 75%, 56% 99%, 6% 73%, 0 25%);
+}
 /*media queries */
 @media (max-width: 767px){
  .section {
@@ -52,7 +78,7 @@ body::-webkit-scrollbar-thumb {
   } 
   .header {
      position: relative;
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
     background-size: cover;
     background-position: top;
@@ -62,6 +88,33 @@ body::-webkit-scrollbar-thumb {
     color: #fff !important;
     font-size: 20px;
     font-weight: bold;
+   }
+   .wizsullivan--image {
+    display: none !important;
+   }
+   .wizsullivan--desc {
+    margin-top: 1rem;
+}
+.wizsullivan--desc > h1 {
+    display: block;
+    color: #fff;
+    padding-top: 1rem;
+    font-size: 18px !important;
+    padding: 10px;
+     font-weight: 400;
+}
+.wizsullivan--desc > p {
+    padding: 10px;
+    font-size: 15px !important;
+    color: #fff;
+    line-height: 100% !important;
+}
+.wizbtn {
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: -0.5rem !important;
+    margin-left: 10px;
 }
 }
 .wizheader {
@@ -123,4 +176,27 @@ transition: all 0.8s;
 .appcard--body {
     padding: 10px;
     font-size: 20px;
+}
+footer {
+    padding-top: 6rem;
+}
+.footer--svg {
+    height: 400px;
+    width: 100%;
+    background-image: url('../images/footer.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*utilities*/
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+}
+.pt-2 {
+    padding-top: 2rem !important;
+}
+.pt-5 {
+    padding-top: 5rem !important;
 }
