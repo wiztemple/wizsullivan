@@ -11,11 +11,11 @@
 <body>
     <div class="wizsullivan">
         <div class="header">
-            <nav class="navbar is-fixed-top wizsullivan--nav" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-fixed-top wizsullivan--nav" role="navigation" aria-label="main navigation" id="scrollNav">
                 <div class="container">
                     <div class="navbar-brand wizsullivan--brand">
                         <a class="navbar-item" href="index.html">
-                            :WizSullivan:
+                            { wiz sullivan }
                         </a>
                         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                             <span aria-hidden="true"></span>
@@ -37,11 +37,9 @@
                         </div>
                         <div class="navbar-end">
                             <div class="navbar-item">
-                                <div class="buttons">
-                                    <a class="button is-primary is-outlined">
-                                        <strong>Hire Me</strong>
-                                    </a>
-                                </div>
+                                <button class="wizbtn--nav">
+                                    Hire Me
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -156,7 +154,24 @@
         </section>
         <footer>
             <div class="footer--svg">
-                
+               <div class="container">
+                   <div class="columns">
+                        <div class="column"></div>
+                        <div class="column">
+                            <div class="links">
+                                <div class="flex flex-drop">
+                                    <div class="justify-space-between">
+                                        <a href="#" _blank=""><img src="./assets/images/logo-github.svg" alt='' /></a>
+                                        <a href="#" _blank="">LinkedIn</a>
+                                        <a href="#" _blank="">Twitter</a>
+                                        <a href="#" _blank="">Facebook</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column"></div>
+                   </div>
+               </div>
             </div>
         </footer>
     </div>

@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Lora');
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 @import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative');
+
 
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lora', serif;
     background-color: #ffffff;
 }
 h1 {
@@ -44,6 +45,32 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
     font-weight: bold;
 }
+.navbar .wizsullivan-brand > a.navbar-item:hover, .navbar .wizsullivan-brand > a.navbar-item.is-active,
+.navbar .wizsullivan-nav .navbar-link:hover,
+.navbar .wizsullivan-brand .navbar-link.is-active {
+  background-color: transparent !important;
+  color: #0a0a0a;
+}
+.wizsullivan--nav .navbar-start > a.navbar-item, .wizsullivan--nav .navbar-start > a.navbar-item.is-active,
+  .wizsullivan--nav .navbar-start .navbar-link,
+  .wizsullivan--nav .navbar-start .navbar-link.is-active,
+  .wizsullivan--nav .navbar-end > a.navbar-item,
+  .wizsullivan--nav .navbar-end > a.navbar-item.is-active,
+  .wizsullivan--nav .navbar-end .navbar-link,
+  .wizsullivan--nav .navbar-end .navbar-link.is-active {
+    background-color: transparent;
+    color: #eee;
+  }
+  .wizsullivan--nav .navbar-start > a.navbar-item:hover, .wizsullivan--nav .navbar-start > a.navbar-item.is-active,
+  .wizsullivan--nav .navbar-start .navbar-link:hover,
+  .wizsullivan--nav .navbar-start .navbar-link.is-active,
+  .wizsullivan--nav .navbar-end > a.navbar-item:hover,
+  .wizsullivan--nav .navbar-end > a.navbar-item.is-active,
+  .wizsullivan--nav .navbar-end .navbar-link:hover,
+  .wizsullivan--nav .navbar-end .navbar-link.is-active {
+    background-color: transparent;
+    color: #fff;
+  }
 .wizsullivan--desc {
     margin-top: 3rem;
 }
@@ -57,16 +84,42 @@ body::-webkit-scrollbar-thumb {
     line-height: 200%;
 }
 .wizbtn {
-    padding: 15px 50px;
+    color: #5854E1;
+    padding: 10px 40px;
     border-radius: 30px;
     font-size: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.wizbtn:hover {
+   background: transparent;
+   border: 2px solid #fff;
+   color: #fff;
+   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   transition: all 0.4s ease-out; 
+}
+.wizbtn--nav {
+    padding: 10px 40px;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 2px solid #fff;
+    background: transparent;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.wizbtn--nav:hover {
+    color: #5854E1;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: all 0.5s ease-in-out;
 }
 .wizsullivan--image {
     margin-top: 10.9rem;
     height: 500px;
     width: 100%;
-    background-image: url('../images/image.jpg');
-    background-size: cover;
+    background-image: url('../images/sullivan.jpg');
+    background-size: contain;
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(46% 0, 100% 25%, 100% 75%, 56% 99%, 6% 73%, 0 25%);
 clip-path: polygon(46% 0, 100% 25%, 100% 75%, 56% 99%, 6% 73%, 0 25%);
@@ -83,12 +136,7 @@ clip-path: polygon(46% 0, 100% 25%, 100% 75%, 56% 99%, 6% 73%, 0 25%);
     background-size: cover;
     background-position: top;
   }
-  .wizsullivan--brand > a{
-    font-family: 'Lobster Two', cursive;
-    color: #fff !important;
-    font-size: 20px;
-    font-weight: bold;
-   }
+
    .wizsullivan--image {
     display: none !important;
    }
@@ -162,16 +210,16 @@ box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    -webkit-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 74% 78%, 48% 71%, 23% 78%, 0% 70%, 0% 35%, 0 0);
-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 74% 78%, 48% 71%, 23% 78%, 0% 70%, 0% 35%, 0 0);
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 75%, 70% 84%, 34% 64%, 0 78%, 0% 43%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 75%, 70% 84%, 34% 64%, 0 78%, 0% 43%, 0 0);
     background-image: url('../images/heaven.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .appcard--image:hover {
-    -webkit-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 68% 81%, 48% 71%, 26% 83%, 0% 70%, 0% 35%, 0 0);
-clip-path: polygon(100% 0, 100% 13%, 100% 35%, 100% 70%, 68% 81%, 48% 71%, 26% 83%, 0% 70%, 0% 35%, 0 0);
-transition: all 0.8s;
+-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 79%, 66% 65%, 36% 78%, 0 78%, 0% 43%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 79%, 66% 65%, 36% 78%, 0 78%, 0% 43%, 0 0);
+transition: all 0.8s ease-in-out;
 }
 .appcard--body {
     padding: 10px;
@@ -199,4 +247,11 @@ footer {
 }
 .pt-5 {
     padding-top: 5rem !important;
+}
+.flex-drop {
+    padding-top: 20rem;
+}
+.justify-space-between {
+    display: flex;
+    justify-content: space-between;
 }
