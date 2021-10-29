@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Experiencecard.module.css';
 
-const ExperienceCard = ({time, jobTitle, company}) => {
+const Experience = ({time, jobTitle, company}) => {
   return (
     <div className={styles.experience}>
       <span>{time}</span>
@@ -11,4 +11,4 @@ const ExperienceCard = ({time, jobTitle, company}) => {
   )
 }
 
-export default ExperienceCard;
+export default Experience;
