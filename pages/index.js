@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ExperienceCard from '../components/ExperienceCard'
+import Experience from '../components/Experience'
 import Hero from '../components/Hero'
 import styles from '../styles/Home.module.css'
 
@@ -30,22 +30,22 @@ export default function Home() {
             <div className={styles.cv}>
               <div className={styles.experienceWrapper}>
                 <h1>Work Experience</h1>
-                <ExperienceCard
+                <Experience
                   time="June 2021 - Present"
                   jobTitle="Javascript Engineer"
                   company="Gitstart, San Francisco, CA."
                 />
-                <ExperienceCard
+                <Experience
                   time="December 2019 - June 2020"
                   jobTitle="Software Developer"
                   company="Hornblower Cruises, San Francisco CA."
                 />
-                <ExperienceCard
+                <Experience
                   time="October 2018 - October 2020"
                   jobTitle="Software Developer"
                   company="Andela, Ilupeju Lagos."
                 />
-                <ExperienceCard
+                <Experience
                   time="February 2017 - July 2017"
                   jobTitle="Web Design Intern"
                   company="e-settlement, Yaba Lagos."
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
               <div className={styles.educationWrapper}>
                 <h1>Education</h1>
-                <ExperienceCard
+                <Experience
                   time=""
                   jobTitle="B.Tech Information Technology"
                   company="Federal Univesity of Technology, Owerri(FUTO)."

@@ -1,0 +1,31 @@
+.experience {
+  margin-top: 16px;
+  border: 1px solid #eaeaea;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.experience span {
+  color: var(--spantext);
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 16px;
+}
+.experience > h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  color: #222;
+  padding-top: 5px;
+}
+.experience p {
+  margin: 0;
+  font-size: 14px;
+  padding-top: 2px;
+  color: var(--textcolor);
+  font-weight: 500;
+}

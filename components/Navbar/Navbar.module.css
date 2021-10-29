@@ -1,0 +1,21 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  font-family: var(--font-sans);
+  display: var(--flex);
+  align-items: var(--items-center);
+  padding: 0 8rem;
+  position: sticky;
+  background-color: var(--bg);
+  box-shadow: 0px 2px 0px -1px rgba(0, 0, 0, 0.05);
+}
+.navbarChild {
+  width: 100%;
+  display: var(--flex);
+  justify-content: var(--justify-between);
+}
+.menuitems {
+  display: var(--flex);
+  align-items: var(--items-center);
+  gap: 20px;
+}
