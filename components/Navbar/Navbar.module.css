@@ -1,10 +1,10 @@
 .navbar {
   width: 100%;
-  height: 80px;
+  height: 70px;
   font-family: var(--font-sans);
   display: var(--flex);
   align-items: var(--items-center);
-  padding: 0 8rem;
+  padding: 0 1.5rem;
   position: sticky;
   background-color: var(--bg);
   box-shadow: 0px 2px 0px -1px rgba(0, 0, 0, 0.05);
@@ -14,8 +14,23 @@
   display: var(--flex);
   justify-content: var(--justify-between);
 }
+.navbarChild > a svg {
+  width: 100px;
+  position: relative;
+  top: 4px;
+}
+
 .menuitems {
   display: var(--flex);
   align-items: var(--items-center);
   gap: 20px;
+}
+@media (min-width: 501px) {
+  .navbar {
+    padding: 0 8rem;
+    height: 80px;
+  }
+  .navbarChild > a svg {
+    width: 100%;
+  }
 }

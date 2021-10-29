@@ -4,7 +4,7 @@
   padding: 1.5rem;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .experience span {
@@ -28,4 +28,9 @@
   padding-top: 2px;
   color: var(--textcolor);
   font-weight: 500;
+}
+@media (min-width: 501px) {
+  .experience {
+    max-width: 300px;
+  }
 }
