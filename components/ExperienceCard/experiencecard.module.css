@@ -8,12 +8,13 @@
   font-size: 13px;
   line-height: 16px;
 }
-.experience h1 {
+.experience > h1 {
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   margin: 0;
+  color: #222;
   padding-top: 5px;
 }
 .experience p {

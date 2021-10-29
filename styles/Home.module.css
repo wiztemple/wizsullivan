@@ -93,27 +93,32 @@
 .cvWrapper{
   padding-top: 90px;
 }
-.cvWrapper h1 {
+.cvWrapper > h1 {
   font-size: 48px;
   font-weight: 500;
+   line-height: 58.09px;
   margin: 0;
 }
 .cv {
   width: 100%;
   display: var(--flex);
-  padding: 50px 0 200px 0;
+  padding: 30px 0 200px 0;
 }
 .experienceWrapper {
   flex-basis: 50%;
 }
-.experienceWrapper h1 {
+.experienceWrapper > h1 {
   font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .educationWrapper {
   flex-basis: 50%;
 }
-.educationWrapper h1 {
+.educationWrapper > h1 {
   font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 .grid {
   display: flex;
