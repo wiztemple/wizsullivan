@@ -14,14 +14,6 @@ export default function Home() {
               heroDescription="I’m a Frontend Engineer based in Lagos."
             />
           </div>
-          {/* <h1 className={styles.title}>
-          Sullivan Wisdom <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p> */}
           <div className={styles.about}>
             <h1>About</h1>
             <p>
