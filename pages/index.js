@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Experience from '../components/Experience'
 import Hero from '../components/Hero'
 import styles from '../styles/Home.module.css'
 
@@ -30,34 +29,11 @@ export default function Home() {
             <div className={styles.cv}>
               <div className={styles.experienceWrapper}>
                 <h1>Work Experience</h1>
-                <Experience
-                  time="June 2021 - Present"
-                  jobTitle="Javascript Engineer"
-                  company="Gitstart, San Francisco, CA."
-                />
-                <Experience
-                  time="December 2019 - June 2020"
-                  jobTitle="Software Developer"
-                  company="Hornblower Cruises, San Francisco CA."
-                />
-                <Experience
-                  time="October 2018 - October 2020"
-                  jobTitle="Software Developer"
-                  company="Andela, Ilupeju Lagos."
-                />
-                <Experience
-                  time="February 2017 - July 2017"
-                  jobTitle="Web Design Intern"
-                  company="e-settlement, Yaba Lagos."
-                />
+               
               </div>
               <div className={styles.educationWrapper}>
                 <h1>Education</h1>
-                <Experience
-                  time=""
-                  jobTitle="B.Tech Information Technology"
-                  company="Federal Univesity of Technology, Owerri(FUTO)."
-                />
+                
                 <h1>Tools in my toolkit</h1>
                 <ul>
                   <li>HTML & CSS</li>
