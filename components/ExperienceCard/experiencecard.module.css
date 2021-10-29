@@ -1,5 +1,10 @@
 .experience {
   margin-top: 16px;
+  border: 1px solid #eaeaea;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
 }
 
 .experience span {

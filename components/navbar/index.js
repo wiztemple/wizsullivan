@@ -2,7 +2,7 @@ import React from "react";
 import NextLink from 'next/link'
 import styles from './navbar.module.css';
 
-const Navbar = () => {
+export default function Navbar () {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarChild}>
@@ -20,7 +20,7 @@ const Navbar = () => {
               Welcome
             </a>
           </NextLink>
-          <NextLink href="/">
+          <NextLink href="/portfolio">
             <a>
               Portfolio
             </a>
@@ -35,5 +35,3 @@ const Navbar = () => {
     </nav>
   )
 }
-
-export default Navbar;

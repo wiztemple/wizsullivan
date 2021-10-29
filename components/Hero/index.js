@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './hero.module.css'
 
-const Hero = ({ heroTitle, heroDescription, emoji }) => {
+export default function Hero ({ heroTitle, heroDescription, emoji }) {
   return (
     <div>
       <span>
@@ -29,4 +29,3 @@ const Hero = ({ heroTitle, heroDescription, emoji }) => {
     </div>
   )
 }
-export default Hero;
