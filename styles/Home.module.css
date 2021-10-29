@@ -1,15 +1,20 @@
 .container {
+  width: 100%;
   padding: 0 0;
+  display: var(--flex);
+  justify-content: var(--justify-center);
 }
 
 .main {
-  min-height: 100vh;
+  /* min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  min-height: 100vh;
+  max-width: 700px;
 }
 
 .footer {
@@ -64,7 +69,52 @@
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
-
+.heroHeader {
+  padding-top: 134px;
+}
+.about {
+  position: relative;
+  padding-top: 120px;
+}
+.about h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 0;
+}
+.about p{
+  color: var(--ptext);
+  font-size: 1.125rem;
+  margin: 0;
+  padding-top: 10px;
+  line-height: 1.9;
+  color: rgb(55, 54, 59);
+}
+.cvWrapper{
+  padding-top: 90px;
+}
+.cvWrapper h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+.cv {
+  width: 100%;
+  display: var(--flex);
+  padding: 50px 0 200px 0;
+}
+.experienceWrapper {
+  flex-basis: 50%;
+}
+.experienceWrapper h1 {
+  font-size: 24px;
+}
+.educationWrapper {
+  flex-basis: 50%;
+}
+.educationWrapper h1 {
+  font-size: 24px;
+}
 .grid {
   display: flex;
   align-items: center;

@@ -44,26 +44,14 @@ a {
   --justify-center: center;
   --justify-between: space-between;
   --items-center: center;
+  --subtitle: #3B4359;
+  --ptext: #5C5673;
+  --spantext: #827F8D;
+  --textcolor: #423B44;
 }
 .light {
   --bg: #fff;
-  --fg: #222;
-  --gray: #666;
-  --light-gray: #dedede;
-  --lighter-gray: #f5f5f5;
-  --lightest-gray: #fafafa;
-  --article-color: #222;
-  --header-bg: rgb(255, 255, 255);
-  --gray-alpha: rgba(19, 20, 21, 0.5);
-  --selection: rgba(0, 0, 0, 0.99);
-  --accent: #0493d3;
-  --lighter-accent: #1274a0;
-
-  --token: var(--lighter-accent);
-  --comment: #404040;
-  --keyword: var(--accent);
-  --name: #353535;
-  --highlight: #eaeaea;
+  
 }
 
 svg {
@@ -74,6 +62,7 @@ p,
 li {
   letter-spacing: -0.33px;
   font-size: 1.125rem;
+  font-family: var(--font-sans);
 }
 
 h1,
