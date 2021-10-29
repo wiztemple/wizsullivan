@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Experiencecard.module.css';
+import styles from './Experience.module.css';
 
 const Experience = ({time, jobTitle, company}) => {
   return (
