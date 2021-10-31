@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  padding: 1.5rem 1rem;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
@@ -9,11 +9,16 @@
 }
 
 .footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+  display: block;
   font-family: var(--font-sans);
   font-weight: 500;
   color: var(--textcolor);
+}
+@media (min-width: 501px) {
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
 }
