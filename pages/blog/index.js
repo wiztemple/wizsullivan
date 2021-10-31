@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import Article from '../../components/Article'
 import Hero from '../../components/Hero'
 
 import styles from '../../styles/Home.module.css'
 
 export default function Blog() {
+  const slug ="js-replace-null-with-es6-symbols"
   return (
     <div>
       <div className={styles.container}>
@@ -24,9 +26,22 @@ export default function Blog() {
           </div>
           <div className={styles.about}>
             <h1>Articles</h1>
-            <p>
-            I share articles on subjects that I have a deep knowledge on and the ones I’m currently learning.
-            </p>
+            <ul className={styles.p0}>
+              <Article 
+              title="Replace null with ES6 Symbols" 
+              created="October 2021" 
+              readTime="8 min read" 
+              href="/slug"
+              as={`/${slug}`}
+              />
+              <Article 
+              title="The start of a new era for Responsive Web Design" 
+              created="May 2021" 
+              readTime="8 min read" 
+              href="/slug"
+              as={`/${slug}`}
+              />
+            </ul>
           </div>
         </main>
       </div>

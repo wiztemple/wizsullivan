@@ -20,7 +20,17 @@
   min-height: 100vh;
   max-width: 700px;
 }
-
+/* padding*/
+.p0 {
+  padding: 0;
+}
+/* margin */
+.ml-0 {
+  margin-left: 0;
+}
+.m0 {
+  margin:0;
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
