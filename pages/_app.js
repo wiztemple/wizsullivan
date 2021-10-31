@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import Navbar from '../components/Navbar/index'
+import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         <Navbar />
       </header>
       <Component {...pageProps} />
+      <Footer />
     </div>
   )
 }

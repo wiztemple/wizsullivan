@@ -3,7 +3,7 @@ import styles from './Hero.module.css'
 
 export default function Hero ({ heroTitle, heroDescription, emoji }) {
   return (
-    <div>
+    <div className={styles.hero}>
       <span>
         <h1 className={styles.heroTitle}>{heroTitle}</h1>
         <span>{emoji}</span>

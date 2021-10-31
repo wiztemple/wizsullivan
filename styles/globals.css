@@ -22,7 +22,10 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+a:hover {
+  cursor: url("/Ellipse-266.cur"), default;
+  transition: cursor .5s ease-in-out;
+}
 * {
   box-sizing: border-box;
 }
@@ -48,6 +51,7 @@ a {
   --ptext: #5C5673;
   --spantext: #827F8D;
   --textcolor: #423B44;
+  --linkcolor: #229EE3;
 }
 .light {
   --bg: #fff;

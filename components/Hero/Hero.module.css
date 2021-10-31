@@ -1,3 +1,11 @@
+.hero {
+  position: relative;
+}
+.hero > span {
+  display: var(--flex);
+  align-items: var(--items-center);
+  gap: 20px;
+}
 .heroTitle {
   font-size: 48px;
   margin-top: 0;
