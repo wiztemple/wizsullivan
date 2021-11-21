@@ -47,8 +47,6 @@
   line-height: 1.15;
   font-size: 4rem;
 }
-
-.title,
 .description {
   text-align: center;
 }
@@ -87,6 +85,12 @@
   padding-top: 10px;
   line-height: 1.9;
   color: rgb(55, 54, 59);
+}
+
+/* article related */
+.articleheader {
+  font-size: 4rem;
+  padding-top: 50px;
 }
 .cvWrapper{
   padding-top: 90px;

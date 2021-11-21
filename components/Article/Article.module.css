@@ -13,12 +13,12 @@
   align-items: var(--items-center);
   gap: 20px;
 }
-.created, .readTime {
+.publishedOn, .readTime {
   display: var(--flex);
   align-items: var(--items-center);
   gap: 7px;
 }
-.created > span, .readTime > span {
+.publishedOn > span, .readTime > span {
   font-size: .75rem;
   font-weight: 500;
   line-height: 24px;

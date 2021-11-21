@@ -1,16 +1,18 @@
 import React from 'react';
+import styles from './Articles.module.css';
 import Article from '../Article';
 
 const Articles = ({ articles, slug }) => {
   return (
-    <ul>
+    <ul className={styles.articles}>
       {articles?.map(article => {
         return (
           <Article
             key={article.slug}
-            href="/[slug]"
-            as={`/${article.slug}`}
-            title={`${article.title}`}
+            href={`/blog/${article.slug}`}
+            title={`${article.frontmatter.title}`}
+            readTime={article.frontmatter.readTime}
+            publishedOn={article.frontmatter.publishedOn}
           />
         )
       })}
