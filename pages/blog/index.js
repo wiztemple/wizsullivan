@@ -1,11 +1,9 @@
-import React from 'react'
 import matter from 'gray-matter'
 import path from 'path'
 import fs from 'fs'
 import Image from 'next/image'
 import Hero from '../../components/Hero'
 import Articles from '../../components/Articles'
-
 export default function Blog({ articles }) {
   return (
     <div>
@@ -41,7 +39,7 @@ Blog.defaultProps = {
   articles: [],
 }
 
-export function getStaticProps(ctx) {
+export function getStaticProps() {
 
   const files = fs.readdirSync(path.join('articles'))
 

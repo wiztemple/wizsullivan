@@ -1,10 +1,12 @@
+/* eslint-disable react/prop-types */
+import React from 'react';
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Head from 'next/head'
 
-const BlogArticle = ({ frontmatter: { title, summary }, slug, content }) => {
+const BlogArticle = ({ frontmatter: { title, summary }, content }) => {
   return (
     <div>
       <Head>
