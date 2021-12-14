@@ -1,10 +1,8 @@
-import React from 'react';
-import styles from './Articles.module.css';
 import Article from '../Article';
 
-const Articles = ({ articles, slug }) => {
+const Articles = ({ articles }) => {
   return (
-    <ul className={styles.articles}>
+    <ul className="">
       {articles?.map(article => {
         return (
           <Article

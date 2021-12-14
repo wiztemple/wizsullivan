@@ -1,13 +1,12 @@
 import React from "react";
 import NextLink from 'next/link'
 import { useRouter } from 'next/router';
-import styles from './Navbar.module.css';
 
-export default function Navbar () {
+const Navbar = () => {
   const router = useRouter();
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navbarChild}>
+    <nav className="w-screen bg-white shadow-sm fixed px-12 lg:h-[70px] flex items-center justify-center">
+      <div className="lg:w-[960px] flex items-center justify-between">
         <NextLink href="/">
           <a>
             <svg width="140" height="50" viewBox="0 0 140 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,19 +15,19 @@ export default function Navbar () {
             </svg>
           </a>
         </NextLink>
-        <div className={styles.menuitems}>
+        <div className="">
           <NextLink href="/">
-            <a className={router.pathname == "/" ? `${styles.active}` : ""}>
+            <a className={router.pathname == "/" ? 'text-black' : ""}>
               Welcome
             </a>
           </NextLink>
           <NextLink href="/portfolio">
-            <a className={router.pathname == "/portfolio" ? `${styles.active}` : ""}>
+            <a className={router.pathname == "/portfolio" ? 'text-black' : ""}>
               Portfolio
             </a>
           </NextLink>
           <NextLink href="/blog">
-            <a className={router.pathname == "/blog" ? `${styles.active}` : ""}>
+            <a className={router.pathname == "/blog" ? 'text-black' : ""}>
               Blog
             </a>
           </NextLink>
@@ -37,3 +36,5 @@ export default function Navbar () {
     </nav>
   )
 }
+
+export default Navbar;
