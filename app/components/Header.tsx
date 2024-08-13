@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <nav
       className={`w-screen bg-white ${
-        header ? "fixed shadow-sm" : "relative"
+        header ? "fixed border-b border-b-slate-200" : "relative"
       } sm:px-12 px-5 h-[70px] flex items-center justify-center`}
     >
       <div className="sm:w-[960px] w-full flex items-center justify-between">
@@ -54,12 +54,12 @@ const Header = () => {
           </svg>
         </Link>
         <div className="flex gap-3">
-          <Link href="/" className={pathname == "/" ? "text-black" : ""}>
+          <Link href="/" className={pathname == "/" ? "text-[#3d9cea]" : ""}>
             Welcome
           </Link>
           <Link
             href="/portfolio"
-            className={pathname == "/portfolio" ? "text-[#4d9ada]" : ""}
+            className={pathname == "/portfolio" ? "text-[#3d9cea]" : ""}
           >
             Portfolio
           </Link>
