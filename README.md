@@ -1,3 +1,4 @@
 ### Wizsullivan
-This is a [wizsullivan](https://wizsullivan.netlify.app/)
+
+Netlify Link: [wizsullivan](https://wizsullivan.netlify.app/)
 
