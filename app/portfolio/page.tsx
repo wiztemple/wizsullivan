@@ -54,6 +54,14 @@ const projects = [
     banner: "/cashenvoy.png",
     description: "",
   },
+  {
+    id: 7,
+    title: "FlamesUI",
+    url: "https://wiztemple.github.io/flamesui/",
+    type: "webApp",
+    banner: "/flamesui.png",
+    description: "A simple UI component design library",
+  },
 ];
 
 const Portfolio = () => {
@@ -111,7 +119,10 @@ const Portfolio = () => {
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
             {filteredProjects.map((project) => (
-              <div key={project.id} className="p-4 border border-slate-200 rounded-lg">
+              <div
+                key={project.id}
+                className="p-4 border border-slate-200 rounded-lg"
+              >
                 <Image
                   src={project.banner}
                   alt={project.title}
