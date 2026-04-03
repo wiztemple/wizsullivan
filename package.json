@@ -10,22 +10,23 @@
     "postinstall": "npm rebuild lightningcss --build-from-source || true"
   },
   "dependencies": {
+    "lightningcss": "^1.32.0",
+    "next": "16.2.2",
     "react": "^19",
-    "react-dom": "^19",
-    "next": "16.2.2"
+    "react-dom": "^19"
   },
   "engines": {
     "node": ">=20.9.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@tailwindcss/postcss": "^4.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.2",
     "postcss": "^8",
     "tailwindcss": "^4.2.2",
-    "@tailwindcss/postcss": "^4.2.2",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.2"
+    "typescript": "^5"
   }
 }
