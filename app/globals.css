@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-ptext: #5C5673;
+  --color-subtitle: #3B4359;
+  --color-spantext: #827F8D;
+  --color-textcolor: #423B44;
+  --color-linkcolor: #229EE3;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+  --background-image-linear-gradient: linear-gradient(180deg, #FDFCF9 20%, #CBF6DF 50%, #FFF 90%);
+
+  --shadow-cardShadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
